@@ -9,6 +9,10 @@
       rel="stylesheet"
     />
     <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
       integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
@@ -23,12 +27,17 @@
   <body>
     <div class="max-nav-overlay"></div>
     <nav class="navbar">
-      <a class="navbar-brand" href="/index.html"
-        ><img
+      <div class="navbar-brand max-normal-link" data-href="/pages/index.html">
+        <img
           class="max-bb-logo"
           src="/assets/icons/BB.png"
-          alt="Birt's Bonanza Logo"
-      /></a>
+          alt="Baltic Apprenticeship Logo"
+        />
+        <div class="max-main-title">
+          BALTIC
+          <div class="max-secondary-title">Apprenticeship</div>
+        </div>
+      </div>
       <button
         class="navbar-toggler first-button"
         type="button"
@@ -43,10 +52,15 @@
         </div>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent20">
-        <div class="nav-link max-nav-link" data-href="/pages/index.html">
+        <div
+          class="nav-link max-nav-link max-active-link"
+          data-href="/pages/index.html"
+        >
           Home
         </div>
-        <div class="nav-link max-nav-link" data-href="">Courses</div>
+        <div class="nav-link max-nav-link" data-href="/pages/courses.html">
+          Courses
+        </div>
         <div
           class="nav-link max-nav-link"
           data-href="/pages/tasks.html"
@@ -54,7 +68,9 @@
         >
           Policies
         </div>
-        <div class="nav-link max-nav-link" data-href="">About Us</div>
+        <div class="nav-link max-nav-link" data-href="/pages/about.html">
+          About Us
+        </div>
         <div class="nav-link max-nav-link" data-href="/pages/contact.html">
           Contact
         </div>
@@ -68,6 +84,12 @@
         data-hrefs="../assets/JavaScript/form.js"
       >
         Contact
+        <img
+          class="max-contact-logo"
+          src="/assets/svgs/envelope-open-text-solid.svg"
+          alt="contact logo"
+          srcset=""
+        />
       </div>
     </footer>
   </body>

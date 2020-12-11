@@ -18,8 +18,8 @@
 }
 
 .max-main {
-  margin-top: 68px;
-  min-height: calc(100vh - 24px - 68px);
+  margin-top: 66px;
+  min-height: calc(100vh - 24px - 66px);
 }
 
 .max-main.max-contact-form {
@@ -50,14 +50,19 @@
   border-radius: 3px;
   font-weight: 500;
   padding: 0 5px;
-  color: #ff7917;
+  color: #250a50;
+  min-height: 24px;
+}
+
+.max-main.max-contact-form > form > label > textarea {
+  padding-top: 5px;
 }
 
 .max-main.max-contact-form > form > label > textarea::placeholder,
 .max-main.max-contact-form > form > label > input::placeholder {
-  color: #1100ff60;
+  color: #2322305e;
   font-style: italic;
-  font-size: 12px;
+  font-size: 11px;
 }
 
 .max-main.max-contact-form > form > button {
@@ -126,24 +131,30 @@ footer {
   background: var(--max-background);
 }
 
-footer > a {
+footer > .max-normal-link {
   color: aliceblue;
   text-decoration: none;
   font-size: 12px;
   margin-right: 5px;
 }
 
-footer > a:hover {
+footer > .max-normal-link:hover {
   color: rgb(172, 0, 66);
   text-decoration: none;
 }
 
-footer > a:focus {
+footer > .max-normal-link:focus {
   color: rgb(172, 0, 66);
   text-decoration: none;
 }
 
-footer > a:active {
+footer > .max-normal-link:active {
   color: rgb(172, 0, 66);
   text-decoration: none;
+}
+
+footer > .max-normal-link > img.max-contact-logo {
+  width: 14px;
+  margin-left: 5px;
+  margin-top: -2px;
 }

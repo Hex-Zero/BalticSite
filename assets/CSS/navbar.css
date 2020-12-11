@@ -1,3 +1,17 @@
+nav.navbar .navbar-brand.max-normal-link {
+  display: flex;
+}
+nav.navbar .navbar-brand.max-normal-link {
+  font-family: "Roboto Slab", serif;
+  letter-spacing: 5px;
+  font-size: 14px;
+}
+
+nav.navbar .navbar-brand.max-normal-link .max-secondary-title {
+  font-size: 12px;
+  letter-spacing: -1px;
+}
+
 .animated-icon1,
 .animated-icon2,
 .animated-icon3 {
@@ -37,15 +51,15 @@
 }
 
 .animated-icon1 span {
-  background: #ffffff;
+  background: #000000;
 }
 
 .animated-icon2 span {
-  background: #e3f2fd;
+  background: #000000;
 }
 
 .animated-icon3 span {
-  background: #f3e5f5;
+  background: #000000;
 }
 
 .animated-icon1 span:nth-child(1) {
@@ -207,15 +221,16 @@ nav.navbar ul > li.nav-item > a.nav-link {
   position: relative;
 }
 
-nav.navbar ul > li.nav-item.max-nav-active > a.nav-link::before {
-  content: "";
-  position: absolute;
-  width: 10px;
-  height: 10px;
-  left: -26px;
-  top: 15px;
-  transform: rotate(-45deg);
-  background-color: aliceblue;
+nav.navbar .nav-link.max-nav-link {
+  cursor: pointer;
+}
+
+nav.navbar .nav-link.max-nav-link:hover {
+  color: #fff;
+}
+
+nav.navbar .nav-link.max-nav-link.max-active-link {
+  color: #fff;
 }
 
 nav.navbar ul > li.nav-item:hover > a.nav-link::before {
